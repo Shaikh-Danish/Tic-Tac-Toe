@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="style.css"></link>
+		<script src="main.js" defer></script>
+		<title>Tic Tac Toe</title>
+</head>
+<body>
+		<main>
+				<section class="game-window" id="game-window">
+						<div class="main-logo">
+								<a href="index.html">
+										<img src="img/logo.svg" alt="logo" class="">
+								</a>
+						</div>
+				  
+						<div class="game-start__choices">
+								<header class="game-start__header">
+										<h2 class="heading">pick player 1's mark</h2>
+								</header>
+								<div class="game-start__mark">
+										<div class="btn selected" id="x-mark">
+												<img src="img/icon-x.svg" alt="x" class="game-start__x-icon">
+										</div>
+										<div class="btn" id="o-mark">
+												<img src="img/icon-o.svg" alt="o" class="game-start__o-icon">
+										</div>
+								</div>
+								<footer class="game-start__footer">remember : x goes first</footer>
+						</div>
+				  
+						<div class="game-start__buttons">
+								<button class="btn-cpu" id="cpu">new game (vs cpu)</button>
+								<button class="btn-player" id="player">new game (vs player)</button>
+						</div>
+				</section>
+			
+				<section class="game-board" id="board-container">
+						<section class="game-info">
+								<div class="game-info__logo">
+										<img src="img/logo.svg" alt="" class="logo__icon">
+								</div>
+								<div class="show-turn">
+										<img src="img/icon-x-default.svg" alt="" class="game-info__icon-xo" id="turn-icon">
+										<label>turn</label>
+								</div>
+								<button class="restart" id="restart"><img src="img/rotate-right.png" alt="restart" class="game-info__icon-restart"></button>
+						</section>
+						<section class="board cross">
+								<div class="cell">	</div>
+								<div class="cell"></div>
+								<div class="cell"></div>
+								<div class="cell"></div>
+								<div class="cell"></div>
+								<div class="cell"></div>
+								<div class="cell"></div>
+								<div class="cell"></div>
+								<div class="cell"></div>
+						</section>						
+						<section class="game-info">
+								<div class="x-win box">
+										<p class="x-heading" id="x-heading">x (p1)</p>
+										<p class="score x-score" id="x-score">0</p>
+								</div>
+								<div class="ties box">
+										<p class="tie-heading">ties</p>
+										<p class="score tie-score" id="tie-score">0</p>
+								</div>
+								<div class="o-win box">
+										<p class="o-heading" id="o-heading">o (p2)</p>	
+										<p class="score o-score" id="o-score">0</p>
+								</div>
+						</section>
+				</section>
+		</main>
+		<section class="game-modal game-restart">
+				<div class="modal-window">
+						<h1 class="restart__heading">restart game?</h1>
+						<button class="restart__no">no, cancel</button>
+						<button class="restart__yes">yes, restart</button>
+				</div>
+		</section>
+		<section class="game-modal game-winner">
+				<div class="winner-modal-window"></div>
+		</section>
+</body>
+</html>
